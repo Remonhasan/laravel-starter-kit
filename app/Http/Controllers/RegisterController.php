@@ -31,6 +31,7 @@ class RegisterController extends Controller
                     ->withErrors($validator)
                     ->withInput($request->all());
             }
+             
 
             User::create([
                 'name'     => $request->name,
